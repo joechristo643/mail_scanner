@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+
+
+@media screen and (max-width:600px){
+    .cards{
+        flex-direction: column;
+    width: 100% !important;
+    }
+    
+}
+
+@media screen and (min-width:600px){
+    .card:first-of-type{
+        margin-left: 0% !important;
+    }
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body{
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    display: flex;
+    
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: 74%;
+}
+.title-text{
+    font-weight: 500;    
+}
+section{
+    width: 100%;
+}
+.mail-grid{
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    width: 64%;
+    height: 300px;
+    margin: 30px;
+    overflow-y: auto;
+}
+.mail-title{
+    padding: 10px;    
+}
+.scanlist-table th,td{
+    text-align: center;
+    padding: 5px;
+    color:#1f5c84;
+    font-size: 13px;
+}
+.scanlist-table tr{
+    box-shadow: 0px 1px 0px 0px rgba(167, 159, 159, 0.2);
+}
+.scanlist-table{
+    width: 100%;
+}
+.scanlist-table,th,td {
+    border-collapse: collapse;
+}
+.card{
+    height: 150px;
+    background:#a79e9e;
+    width: 50%;
+    margin:2%;
+}
+.leftnav{
+width: 20%;
+border-right: 1px solid rgba(167, 159, 159, 0.2);
+}
+.content{
+    width: 80%;
+    padding-left: 3%;
+}
+#website-list{
+    list-style: none;
+    padding: 10px;
+}
+#website-list li{
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: height 0.5s ease;
+    display: block;
+    height: 30px;
+}
+.arrow{
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    float: right;
+    background: transparent;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.down{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.up{
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+#website-list li:hover {
+    background:#efe9e9;
+}
+.nav-title{
+
+    padding: 10px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+svg{
+    height: 50px;
+    width: 50px;
+}
+.card-title{
+display: flex;
+justify-content:space-around;
+align-items: center;
+margin: 10%;
+}
+.count{
+    font-size: 35px;
+    font-weight: 500;
+}
+.card-text{
+    text-align: center;
+}
+#website-list .active {
+    background:#e4e0e0;
+}
+.mail-content:empty::before
+{
+    content: 'Select a website to display mailids';
+    font-size: 15px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.mail-content{
+    margin: 3%;
+
+}
